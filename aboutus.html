@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    
+    <!--Link to bootstrap css stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!--Link to my external css stylesheet below-->
+    <link rel="stylesheet" href="css/mainstyles.css">
+</head>
+
+
+  <body id="aboutusbody">
+    <!--HEADER-->
+    <div class="container-fluid text-center" id="header">
+      <div class="row align-items-start">
+        <div class="col align-self-center text-start" id="phone">
+          Call us at (613)-123-4567
+        </div>
+        <div class="col-md-auto align-self-center" id="headerhours">
+           Opening Hours Mon-Fri 10:00am, Weekends 9:00am
+        </div>
+        <div class="col align-self-right text-end" id="socials">
+          <img src="images/social-bar-edit.png" class="rounded" id="socialimg" alt="Simply Nails social bar">
+       </div>
+      </div>
+    </div>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md" id="navbarother">
+      <div class="container-fluid" id="navigation">
+        <img src="images/logo-edit.png" class="rounded" id="logoimg" alt="Simply Nails logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100 nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown mr-auto">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="handcare.html">Hand Care</a></li>
+                <li><a class="dropdown-item" href="footcare.html">Foot Care</a></li>
+                <li><a class="dropdown-item" href="packages.html">Packages</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experts.html">Our Experts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-right" id="navbookbtn">
+          <button type="button" class="btn" onclick = "bookNow();">Book Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <!--TITLE-->
+    <h1 class="text-center" id="aboutustitle">About Us</h1>
+
+    <!--MAIN ELEMENTS-->
+    <div class="container" id="aboutuscolumn">
+      <div class="row align-items-start">
+        <div class="col align-self-start">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.3172205220935!2d-75.68571318843331!3d45.423106370952645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050a6db98d73%3A0x188a59c3622fdbae!2sUniversity%20of%20Ottawa!5e0!3m2!1sen!2sca!4v1686424841142!5m2!1sen!2sca" 
+              width="500" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+         </div>
+        </div>
+        <div class="col align-self-center" id="aboutusdetails">
+          <div class="contacttitle">
+            Contact Us
+          </div>
+          <div class="contactdetails">
+            <ul class="list-unstyled" id="emailandphone">
+              <li>simplynails@gmail.com</li>
+              <li>(613)-123-4567</li>
+            </ul>
+          </div>
+          <div class="locationtitle">
+            Location
+          </div>
+          <div class="locationdetails">
+            75 Laurier Avenue, Ottawa, ON, K1N 6N5
+          </div>
+          <div class="hourstitle">
+            Hours
+          </div>
+          <div class="hoursdetails">
+            <div class="container text-right" id="hoursdetails">
+              <div class="row align-items-start">
+                <div class="col align-self-center" id="weekdaycolumn">
+                  <ul class="list-unstyled" id="weekdays">
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                    <li>Saturday</li>
+                    <li>Sunday</li>
+                  </ul>
+                </div>
+                <div class="col align-self-center" id="dayandhourcolumn">
+                  <ul class="list-unstyled" id="dayandhour">
+                    <li>10:00am - 5:00pm</li>
+                    <li>10:00am - 5:00pm</li>
+                    <li>10:00am - 5:00pm</li>
+                    <li>10:00am - 5:00pm</li>
+                    <li>10:00am - 5:00pm</li>
+                    <li>9:00am - 5:00pm</li>
+                    <li>9:00am - 4:00pm</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Link to bootstrap jss (stays at bottom of body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+    <!--Link to my javascript file-->
+    <script src="script.js"></script>
+  </body>
+</html>

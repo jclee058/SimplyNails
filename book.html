@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simply Nails</title>
+    
+    <!--Link to bootstrap css stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!--Link to my external css stylesheet below-->
+    <link rel="stylesheet" href="css/mainstyles.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="container-fluid text-center" id="header">
+      <div class="row align-items-start">
+        <div class="col align-self-center text-start" id="phone">
+          Call us at (613)-123-4567
+        </div>
+        <div class="col-md-auto align-self-center" id="headerhours">
+           Opening Hours Mon-Fri 10:00am, Weekends 9:00am
+        </div>
+        <div class="col align-self-right text-end" id="socials">
+          <img src="images/social-bar-edit.png" class="rounded" id="socialimg" alt="Simply Nails social bar">
+       </div>
+      </div>
+    </div>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md" id="navbarhome">
+      <div class="container-fluid" id="navigation">
+        <img src="images/logo-edit.png" class="rounded" id="logoimg" alt="Simply Nails logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100 nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown mr-auto">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="handcare.html">Hand Care</a></li>
+                <li><a class="dropdown-item" href="footcare.html">Foot Care</a></li>
+                <li><a class="dropdown-item" href="packages.html">Packages</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experts.html">Our Experts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-right" id="navbookbtn">
+          <button type="button" class="btn" id="navbookbtn" onclick = "bookNow();">Book Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <!--TITLE-->
+    <h1 class="text-center" id="bookingtitle">Booking</h1>
+
+    <!--FORM-->
+    <div class="container text-right">
+      <div class="row align-items-start">
+        <div class="col align-self-center">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail">
+            </div>
+            <div class="col-12">
+              <label for="inputEmail4" class="form-label">Date and Time</label>
+              <input type="datetime-local" class="form-control" id="inputDateTime">
+            </div>
+            <div class="col-12">
+              <label for="expert" class="form-label">Expert</label>
+              <select id="expert" class="form-select">
+                <option selected>Choose...</option>
+                <option>Jaiden</option>
+                <option>Jasmine</option>
+                <option>Wendy</option>
+                <option>Alice</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="handCare" class="form-label">Hand Care</label>
+              <select id="handCare" class="form-select">
+                <option selected>None Selected</option>
+                <optgroup label="Manicure Services">
+                  <option> Classic Manicure $25</option>
+                  <option>French Manicure $30</option>
+                  <option>Spa Manicure $35</option>
+                </optgroup>
+                <optgroup label="Shellac Services">
+                  <option>Classic Shellac Manicure $30</option>
+                  <option>French Shellac Manicure $35</option>
+                  <option>Shellac Removal $10</option>
+                </optgroup>
+                <optgroup label="Acrylic Services">
+                  <option>Acrylic Full Set $50</option>
+                  <option>Acrylic Refill $35</option>
+                  <option>Acrylic Removal $10</option>
+                </optgroup>
+                <optgroup label="Dip Powder Services">
+                  <option>Dip Powder Full Set $60</option>
+                  <option>Dip Powder Refill $50</option>
+                  <option>Dip Powder Removal $10</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="footCare" class="form-label">Foot Care</label>
+              <select id="footCare" class="form-select">
+                <option selected>None Selected</option>
+                <optgroup label="Classic Pedicure Services">
+                  <option> Classic Pedicure $30</option>
+                  <option>French Pedicure $35</option>
+                  <option>Spa Pedicure $40</option>
+                </optgroup>
+                <optgroup label="Shellac Pedicure Services">
+                  <option>Classic Shellac Pedicure $35</option>
+                  <option>French Shellac Pedicure $40</option>
+                  <option>Shellac Removal $10</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="packages" class="form-label">Packages</label>
+              <select id="packages" class="form-select">
+                <option selected>None Selected</option>
+                <optgroup label="Classic Service Packages">
+                  <option> Classic Mani-Pedi $50</option>
+                  <option>Classic French Mani-Pedi $60</option>
+                  <option>Classic Mani-Pedi for 2 $80</option>
+                </optgroup>
+                <optgroup label="Shellac Service Packages">
+                  <option> Classic Shellac Mani-Pedi $60</option>
+                  <option>French Shellac Mani-Pedi $70</option>
+                  <option>Classic Shellac Mani-Pedi for 2 $100</option>
+                </optgroup>
+                <optgroup label="Spa Service Packages">
+                  <option>Spa Mani-Pedi $80</option>
+                  <option>Spa Mani-Pedi for 2 $120</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <button type="button" class="btn" id="confirmbtn" onclick="display();">Confirm Details</button>
+            </div>
+          </form>
+        </div>
+        <div class="col align-self-center" id="aboutusdetails2">
+          <div class="contacttitle">
+            Personal Information
+          </div>
+          <div class="contactdetails">
+            <ul class="list-unstyled" id="nameAndEmail">
+              <li id="nameOut">[Name for Appointment]</li>
+              <li id="emailOut">[Email Address]</li>
+            </ul>
+          </div>
+          <div class="locationtitle">
+            Date & Time
+          </div>
+          <div class="locationdetails" id="dateTimeOut">
+            [Date and Time Chosen]
+          </div>
+          <div class="locationtitle">
+            Expert
+          </div>
+          <div class="locationdetails" id="expertOut">
+            [Chosen Expert]
+          </div>
+          <div class="hourstitle">
+            Service/s
+          </div>
+          <div class="contactdetails">
+            <ul class="list-unstyled" id="nameAndEmail">
+              <li id="handOut">Hand Care: </li>
+              <li id="footOut">Foot Care: </li>
+              <li id="packagesOut">Packages: </li>
+            </ul>
+          </div>
+          <div class="container text-right">
+            <div class="row align-items-start">
+              <div class="col align-self-center">
+                <div class="col" id="bookingbtnplace">
+                  <button type="button" class="btn disabled" id="bookingbtn" onclick="confirmation()">Book Appointment</button>
+                </div>
+              </div>
+              <div class="col align-self-center">
+                <div class="col" id="cancelbtnplace">
+                  <button type="button" class="btn disabled" id="cancelbtn" onclick = "cancel()">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!--Link to bootstrap jss (stays at bottom of body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        
+    <!--Link to my javascript file-->
+    <script src="script.js"></script>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,320 @@
+/* Page Background */
+body{
+    background-color: #EBE9EA;
+}
+
+/* HEADER ATTRIBUTES */
+#header{
+    font-family: Optima;
+    font-size: 1.2em;
+    background-color: #FF76AF;
+    height: 40px;
+}
+
+#headerhours{ /* header opening hours text */
+    padding-left: 100px;
+}
+
+
+#socialimg{ /* socials bar */
+    width: 150px;
+    height: 40px;
+}
+
+#logoimg{  /* logo image */
+    padding-right: 20px;
+    width: 175px;
+    height: 50px;
+}
+
+/* NAVBAR ATTRIBUTES */
+#navbarhome{
+    background-color: #FFFAFC;
+    font-family: Geneva;
+    font-size: 1.2em;
+}
+
+#navbarother{
+    background-color: #FFF3F7;
+    font-family: Geneva;
+    font-size: 1.2em;
+}
+
+#navbookbtn{ /* Book Now button */
+    background-color: #FF76AF;
+    color: black;
+    font-family: Geneva;
+    font-size: 1.0em;
+    border-radius: 10px;
+    
+}
+
+
+/* HOME PAGE ATTRIBUTES */
+#homeimg{ /* main homepage image */
+    width: 500px;
+    height: 600px;
+}
+
+#slogan{ /* slogan text "Great moments..." */
+    font-family: Geneva;
+    font-weight: bold;
+    font-size: 3.4em;
+}
+
+.underslogan{ /* under slogan text */
+    padding-top: 20px;
+    font-family: Optima;
+    font-weight: normal;
+    font-size: 0.4em;
+}
+
+#homepgbook{ /* home page book button */
+
+    background-color: #FF76AF;
+    color: black;
+    font-family: Geneva;
+    font-size: 0.5em;
+    border-radius: 10px;
+}
+
+/* ABOUT US PAGE ATTRIBUTES */
+
+#aboutusbody{ /* background for this page */
+    background-color: white;
+}
+
+#aboutustitle{ /* About Us title */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Geneva;
+    font-size: 2.7em;
+    font-weight: bold;
+    color: black;
+}
+
+.map-container{ /*Google map*/
+    border-color: grey;
+    border-style: solid;
+}
+
+.contacttitle{ /*Contact Title*/
+    font-family: Geneva;
+    font-size: 1.6em;
+    text-decoration: underline;
+    color: black;
+}
+
+.contactdetails{/*Contact details*/
+    font-family: Optima;
+    font-size: 1.1em;
+    padding-top: 5px;
+    color: black;
+}
+
+.locationtitle{/*Location Title*/
+    font-family: Geneva;
+    font-size: 1.6em;
+    text-decoration: underline;
+    color: black;
+}
+
+.locationdetails{/*Location details*/
+    font-family: Optima;
+    font-size: 1.1em;
+    padding-top: 5px;
+    color: black;
+}
+
+.hourstitle{/*Hours Title*/
+    font-family: Geneva;
+    font-size: 1.6em;
+    text-decoration: underline;
+    padding-top: 10px;
+    color: black;
+}
+
+.hoursdetails{ /*Hours details*/
+    font-family: Optima;
+    font-size: 1.1em;
+    padding-top: 5px;
+    color: black;
+}
+
+/* SERVICE PAGE SHARED ATTRIBUTES */
+#servicebody{ /* background for this page */
+    background-color: white;
+}
+
+#servicetitle{ /* Page Title */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Geneva;
+    font-size: 2.7em;
+    font-weight: bold;
+    color: black;
+}
+
+#servicescard{ /*Cards with service info*/
+    font-family: Optima;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.card-img-top{ /*Card image */
+    height: 250px;
+}
+
+.card-body{ /*Card description background*/
+    background-color: #EBE9EA;
+}
+
+.card-title{ /*Card title*/
+    font-family: Geneva;
+    text-decoration: underline;
+}
+
+.list-group-item{ /*Card list*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* FOOT CARE PAGE ATTRIBUTES*/
+#footservicescard{
+    font-family: Optima;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 10px;
+}
+
+#footcarecard{
+    width: 400px;
+}
+
+/*PACKAGE PAGE ATTRIBUTES*/
+#packagecardimage{
+    height: 300px;
+}
+
+/*BOOKING PAGE ATTRIBUTES*/
+#bookingtitle{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Geneva;
+    font-size: 2.7em;
+    font-weight: bold;
+    color: black;
+}
+
+#confirmbtn{ /* booking page confirm details button */
+
+    background-color: #FF76AF;
+    color: black;
+    font-family: Geneva;
+    font-size: 1.0em;
+    border-radius: 10px;
+}
+
+#bookingbtn{ /* booking page book button */
+
+    background-color: #FF76AF;
+    color: black;
+    font-family: Geneva;
+    font-size: 1.2em;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#cancelbtn{ /*booking page back/cancel button*/
+    background-color: #FFFAFC;
+    color: black;
+    font-family: Geneva;
+    font-size: 1.2em;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#aboutusdetails2{ /*appointment details (on right)*/
+    visibility: hidden;
+}
+
+/*BOOKING CONFIRMATION PAGE*/
+#thankyoumessage{
+    font-family: Geneva;
+    font-weight: bold;
+    font-size: 3.4em;
+}
+
+#backtohome{ /*back to home button*/
+    background-color: #FF76AF;
+    color: black;
+    font-family: Geneva;
+    font-size: 0.5em;
+    border-radius: 10px;
+}
+
+/*EXPERT PAGE */
+
+#experttitle{ /*page title*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Geneva;
+    font-size: 2.7em;
+    font-weight: bold;
+    color: black;
+}
+
+#expertbody{ /*background for this page*/
+    background-color: white;
+}
+
+.juniorExpert{
+    padding-top: 50px;
+}
+
+#expertcard{
+    border: none;
+}
+
+#expertName{
+    font-family: Geneva;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#expertLevel{
+    font-family: Geneva;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#expertimg{
+    padding-bottom: 15px;
+    height: 275px;
+}
+
+/*GALLERY PAGE*/
+#gallerytitle{ /*page title*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Geneva;
+    font-size: 2.7em;
+    font-weight: bold;
+    color: black;
+}
+
+#gallerybody{ /*background for this page*/
+    background-color: white;
+}
+
+#gallery{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Optima;
+}

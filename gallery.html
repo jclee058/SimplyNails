@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    
+    <!--Link to bootstrap css stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!--Link to my external css stylesheet below-->
+    <link rel="stylesheet" href="css/mainstyles.css">
+  </head>
+
+
+  <body id="gallerybody">
+    <!--HEADER-->
+    <div class="container-fluid text-center" id="header">
+      <div class="row align-items-start">
+        <div class="col align-self-center text-start" id="phone">
+          Call us at (613)-123-4567
+        </div>
+        <div class="col-md-auto align-self-center" id="headerhours">
+           Opening Hours Mon-Fri 10:00am, Weekends 9:00am
+        </div>
+        <div class="col align-self-right text-end" id="socials">
+          <img src="images/social-bar-edit.png" class="rounded" id="socialimg" alt="Simply Nails social bar">
+       </div>
+      </div>
+    </div>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md" id="navbarhome">
+      <div class="container-fluid" id="navigation">
+        <img src="images/logo-edit.png" class="rounded" id="logoimg" alt="Simply Nails logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100 nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown mr-auto">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="handcare.html">Hand Care</a></li>
+                <li><a class="dropdown-item" href="footcare.html">Foot Care</a></li>
+                <li><a class="dropdown-item" href="packages.html">Packages</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experts.html">Our Experts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-right" id="navbookbtn">
+          <button type="button" class="btn" id="navbookbtn" onclick = "bookNow();">Book Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <!--TITLE-->
+    <h1 class="text-center" id="gallerytitle">Gallery</h1>
+
+    <!--CARDS-->
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="gallery">
+      <div class="col">
+        <div class="card">
+          <img src="images/gallery1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Acrylic Set by Janine</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/gallery2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Shellac Set by Megan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/gallery3.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Acrylic Set by Alice</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/gallery4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">French Mani-Pedi Set by Wendy</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/gallery5.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Classic Manicure Set by Janine</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/gallery6.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Shellac Pedicure Set by Megan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/gallery7.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Shellac French Set by Wendy</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/gallery8.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dip Powder Set by Janine</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Link to bootstrap jss (stays at bottom of body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      
+    <!--Link to my javascript file-->
+    <script src="script.js"></script>
+  </body>
+</html>

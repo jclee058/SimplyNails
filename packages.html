@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Packages</title>
+    
+    <!--Link to bootstrap css stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!--Link to my external css stylesheet below-->
+    <link rel="stylesheet" href="css/mainstyles.css">
+  </head>
+
+
+  <body id="servicebody">
+    <!--HEADER-->
+    <div class="container-fluid text-center" id="header">
+      <div class="row align-items-start">
+        <div class="col align-self-center text-start" id="phone">
+          Call us at (613)-123-4567
+        </div>
+        <div class="col-md-auto align-self-center" id="headerhours">
+           Opening Hours Mon-Fri 10:00am, Weekends 9:00am
+        </div>
+        <div class="col align-self-right text-end" id="socials">
+          <img src="images/social-bar-edit.png" class="rounded" id="socialimg" alt="Simply Nails social bar">
+       </div>
+      </div>
+    </div>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md" id="navbarother">
+      <div class="container-fluid" id="navigation">
+        <img src="images/logo-edit.png" class="rounded" id="logoimg" alt="Simply Nails logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100 nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown mr-auto">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="handcare.html">Hand Care</a></li>
+                <li><a class="dropdown-item" href="footcare.html">Foot Care</a></li>
+                <li><a class="dropdown-item" href="packages.html">Packages</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experts.html">Our Experts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-right" id="navbookbtn">
+          <button type="button" class="btn" onclick = "bookNow();">Book Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <!--TITLE-->
+    <h1 class="text-center" id="servicetitle">Packages</h1>
+
+    <!--CARDS-->
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="servicescard">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/mani-pedi-classic-packages.webp" class="card-img-top" id="packagecardimage" alt="Manicure service">
+          <div class="card-body">
+            <h5 class="card-title">Classic Service Packages</h5>
+            <p class="card-text">All your favourite classic services offered together in one appointment. You can even book an appointment with someone else for a much needed day trip. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p class="mb-1" id="">Classic Mani-Pedi ......................................$50</p>
+              <small>A classic manicure & pedicure in one appointment</small>
+            </li>
+            <li class="list-group-item">
+              <p class="mb-1">Classic French Mani-Pedi ..........................$60</p>
+              <small>A french tip mani-pedi in one appointment</small>
+            </li>
+            <li class="list-group-item">
+              <p class="mb-1">Classic Mani-Pedi for 2 .............................$80</p>
+              <small>A classic mani-pedi for you and a friend or family member. You both come in for the same appointment time!</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/mani-pedi-shellac-packages.png" class="card-img-top" id="packagecardimage" alt="Shellac manicure service">
+          <div class="card-body">
+            <h5 class="card-title">Shellac Service Packages</h5>
+            <p class="card-text">The best shellac services offered together in one appointment. Leave with a fresh, long lasting manicure and pedicure.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p class="mb-1" id="">Classic Shellac Mani-Pedi .........................$60</p>
+              <small>A classic shellac mani-pedi in one appointment</small>
+            </li>
+            <li class="list-group-item">
+              <p class="mb-1">French Shellac Mani-Pedi ..........................$70</p>
+              <small>A french shellac mani-pedi in one appointment</small>
+            </li>
+            <li class="list-group-item">
+              <p class="mb-1">Classic Shellac Mani-Pedi for 2 ...............$100</p>
+              <small>A classic mani-pedi for you and friend or family member. You both come in for the same appointment time!</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/spa-packages.png" class="card-img-top" id="packagecardimage" alt="Acrylic service">
+          <div class="card-body">
+            <h5 class="card-title">Spa Service Packages</h5>
+            <p class="card-text">The best spa services offered together in one appointment. Leave with a beautiful mani-pedi while also feeling relaxed and refreshed. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p class="mb-1" id="">Spa Mani-Pedi ..........................................$80</p>
+              <small>A spa manicure and pedicure in one appointment. With this package, you have the option of adding shellac nail polish for no extra fee!</small>
+            </li>
+            <li class="list-group-item">
+              <p class="mb-1">Spa Mani-Pedi for 2 ................................$120</p>
+              <small>A spa manicure & pedicure for you and a friend or family member. You both come in for the samee appointment time. You can also choose to add shellac nail polish for no extra fee!</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!--Link to bootstrap jss (stays at bottom of body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+    <!--Link to my javascript file-->
+    <script src="script.js"></script>
+  </body>
+</html>
